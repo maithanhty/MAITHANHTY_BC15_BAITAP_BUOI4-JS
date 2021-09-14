@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+      <section>
+          <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#BThome">Bài tập về nhà</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#BTnangcao">Bài tập nâng cao</a>
+                </li>
+                
+              </ul>
+              
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div class="tab-pane container active" id="BThome">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                          <a class="nav-link active" data-toggle="pill" href="#BT1">Bài Tập 1</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="pill" href="#BT2">Bài Tập 2</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="pill" href="#BT3">Bài Tập 3</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="pill" href="#BT4">Bài Tập 4</a>
+                        </li>
+                      </ul>
+                      
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                        <div class="tab-pane container active" id="BT1">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="card">
+                                  <div class="card-header">
+                                    bài 1: Viết chương trình xuất 3 số theo thứ tự tăng dần
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="form-group">
+                                      <label>Nhập số nguyên 1</label>
+                                      <input id="soNguyen1" type="text" class="form-control">
+                        
+                                    </div>
+                                    <div class="form-group">
+                                      <label>Nhập Số nguyên 2</label>
+                                      <input id="soNguyen2" type="text" class="form-control">
+                        
+                                    </div>
+                                    <div class="form-group">
+                                      <label>Nhập Số Nguyên 3</label>
+                                      <input id="soNguyen3" type="text" class="form-control">
+                        
+                                    </div>
+                                    <button id="btnXuatSoNguyen" class="btn btn-success" onclick="xuatsoNguyen()">Xuất số Nguyên thứ tự tăng dần</button>
+                                  </div>
+                                  <div id="footerCardThuTu" class="card-footer text-muted">
+                                    Footer
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane container fade" id="BT2">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="card">
+                                  <div class="card-header">
+                                    Bài 2: Viết chương trình “Chào hỏi” các thành viên trong gia đình
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="form-group">
+                                      <label>xin hỏi ai đang sử dụng máy: </label>
+                                      <div>Bố (B), Mẹ (M), anh Trai (A) và Em gái (E)
+                                      </div>
+                                      <input id="aidangsd" type="text" class="form-control">
+                        
+                                    </div>
+                                    
+                                    
+                                    <button id="btnXuatSoNguyen" class="btn btn-success" onclick="chaoHoi()">Nhập Thông tin</button>
+                                  </div>
+                                  <div id="footerCardChaoHoi" class="card-footer text-muted">
+                                    Footer
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane container fade" id="BT3">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="card">
+                                  <div class="card-header">
+                                    Bài 3: Viết chương trình xuất ra có bao nhiêu số lẻ và bao nhiêu số chẵn.
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="form-group">
+                                      <label>Nhập số nguyên 1</label>
+                                      
+                                      <input id="so1" type="text" class="form-control">
+                        
+                                    </div>
+                                    <div class="form-group">
+                                      <label>Nhập số nguyên 2</label>
+                                      
+                                      <input id="so2" type="text" class="form-control">
+                        
+                                    </div>
+                                    <div class="form-group">
+                                      <label>Nhập số nguyên 3</label>
+                                     
+                                      <input id="so3" type="text" class="form-control">
+                        
+                                    </div>
+                                    
+                                    
+                                    <button id="btnXuatBaoNhiuChanLe" class="btn btn-success" onclick="chanle()">Xuất ra bao nhieu số chẳn lẻ</button>
+                                  </div>
+                                  <div id="footerCardChanle" class="card-footer text-muted">
+                                    Footer
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane container fade" id="BT4">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="card">
+                                  <div class="card-header">
+                                   Bài 4: Hãy cho biết đó là tam giác gì?
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="form-group">
+                                      <label>Nhập cạnh a</label>
+                                      
+                                      <input id="canha" type="text" class="form-control">
+                        
+                                    </div>
+                                    <div class="form-group">
+                                      <label>Nhập cạnh b</label>
+                                      
+                                      <input id="canhb" type="text" class="form-control">
+                        
+                                    </div>
+                                    <div class="form-group">
+                                      <label>Nhập cạnh c</label>
+                                     
+                                      <input id="canhc" type="text" class="form-control">
+                        
+                                    </div>
+                                    
+                                    
+                                    <button id="btnXuattamgiac" class="btn btn-success" onclick="tamgiac()">xuất ra tam giác nào</button>
+                                  </div>
+                                  <div id="footerCardtamgiac" class="card-footer text-muted">
+                                    Footer
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="tab-pane container fade" id="BTnangcao">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                          <a class="nav-link active" data-toggle="pill" href="#baitap1">BT 1</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="pill" href="#baitap2">BT 2</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="pill" href="#baitap3">BT 3</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="pill" href="#baitap4">BT 4</a>
+                        </li>
+                      </ul>
+                      
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                        <div class="tab-pane container active" id="baitap1"></div>
+                        <div class="tab-pane container fade" id="baitap2">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="card">
+                                  <div class="card-header">
+                                    Bài 2: Viết chương trình nhập vào tháng, năm. Cho biết tháng đó có bao nhiêu ngày
+                                  </div>
+                                  <form name="frm" onsubmit="return checkngay();">
+                                    <div class="card-body">
+                                    <div class="form-group">
+                                      <label>Nhập số tháng </label>
+                                      
+                                      <input id="aidangsd" type="number" class="form-control" name="month" min="1" max= "12"
+                                      oninput="if(this.value == '2'){document.getElementById('year').style.display='block'}else{document.getElementById('year').style.display='none'}">
+                        
+                                    </div>
+                                    <section id="year">
+                                      <label >Nhập số năm:</label><br>
+                                      <input type="number" name="year">
+                                    </section>
+                                    
+                                    <input type="submit" value="xác định số ngày"><br>
+                                    <input type="text" name="ketQua" style="width: 50%;">
+                                  </div></form>
+                                  
+                                 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane container fade" id="baitap3">có</div>
+                        <div class="tab-pane container fade" id="baitap4">...</div>
+                      </div>
+                </div>
+                
+              </div>
+          </div>
+      </section>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    <script src="./bai_tap_ve_nha_bai1.js"></script>
+    <script src="./bai_tap_ve_nha_bai2.js"></script>
+    <script src="./bai_tap_ve_nha_bai3.js"></script>
+    <script src="./bai_tap_ve_nha_bai4.js"></script>
+    <script src="./bai_tap_nang_cao_bai2.js"></script>
+</body>
+</html>
